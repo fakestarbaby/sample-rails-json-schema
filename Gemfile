@@ -16,6 +16,7 @@ group :doc do
 end
 
 group :development do
+  gem 'annotate'
   gem 'guard-rspec', require: false
   gem 'spring'
   gem 'spring-commands-rspec'
