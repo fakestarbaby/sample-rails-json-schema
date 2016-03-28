@@ -37,3 +37,7 @@ group :test do
   gem 'json_spec'
   gem 'rspec-request_describer'
 end
+
+group :production do
+  gem 'rails_12factor'
+end
