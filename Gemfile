@@ -35,4 +35,5 @@ end
 
 group :test do
   gem 'json_spec'
+  gem 'rspec-request_describer'
 end
