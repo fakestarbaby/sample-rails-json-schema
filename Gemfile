@@ -32,3 +32,7 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
 end
+
+group :test do
+  gem 'json_spec'
+end
