@@ -56,7 +56,12 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   config.before :suite do
+    DatabaseRewinder.clean_all
     FactoryGirl.reload
+  end
+
+  config.after :each do
+    DatabaseRewinder.clean
   end
 
   config.include FactoryGirl::Syntax::Methods
